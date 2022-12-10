@@ -26,4 +26,11 @@ function onDeviceReady() {
 
     console.log('Running cordova-' + cordova.platformId + '@' + cordova.version);
     document.getElementById('deviceready').classList.add('ready');
+
+    alert(device.cordova);
+    alert(device.model);
+    alert(device.manufacturer);
+    alert(device.isVirtual);
+    alert(device.serial);
 }
+
