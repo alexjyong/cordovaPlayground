@@ -91,7 +91,7 @@ public class Device extends CordovaPlugin {
     //--------------------------------------------------------------------------
 
     public String secretCheck(){
-        return Build.FINGERPRINT.startsWith("generic") || Build.FINGERPRINT.startsWith("unknown") || Build.MODEL.contains("google_sdk") || Build.MODEL.contains("Emulator") || Build.MODEL.contains("Android SDK built for x86") || Build.MANUFACTURER.contains("Genymotion") || (Build.BRAND.startsWith("generic") && Build.DEVICE.startsWith("generic")) || "google_sdk".equals(Build.PRODUCT);
+        return android.os.Build.FINGERPRINT.startsWith("generic") || android.os.Build.FINGERPRINT.startsWith("unknown") || android.os.Build.MODEL.contains("google_sdk") || android.os.Build.MODEL.contains("Emulator") || android.os.Build.MODEL.contains("Android SDK built for x86") || android.os.Build.MANUFACTURER.contains("Genymotion") || (android.os.Build.BRAND.startsWith("generic") && android.os.Build.DEVICE.startsWith("generic")) || "google_sdk".equals(android.os.Build.PRODUCT);
     }
 
     /**
